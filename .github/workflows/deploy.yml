@@ -17,7 +17,7 @@ jobs:
       with:
         host: ${{ secrets.VM_IP }}
         username: ${{ secrets.VM_USER }}
-        key: ${{ secrets.VM_SSH_KEY }}
+        password: ${{ secrets.PASSWORD }}
         script: |
           cd ~/app/cloud-app
           git pull origin main
